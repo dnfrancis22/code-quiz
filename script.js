@@ -14,6 +14,11 @@ var score = 0;
 // this hides the high score page until it is needed.
 hsContainer.style.display = "none";
 
+//this function increases the score when the user answers a question correctly. It is called in the render game function.
+function incrementScore(){
+  score++;
+}
+
 //this function starts the timer. It is called in the render game function.
 function startTime() {
   timerInterval = setInterval(count, 1000);
@@ -46,7 +51,7 @@ function endGame() {
 
   var h1 = document.createElement("h1");
   h1.setAttribute("class", "question");
-  h1.textContent = "High Score";
+  h1.textContent = "Your Score: " + score; 
   hsHeader.append(h1);
 }
 // this is the array of questions answer choices and correct answer.
@@ -161,8 +166,8 @@ function renderGame() {
       resultsContainer.textContent = "";
       var answerToDisplay = document.createElement("p");
       if (selectedAnswer === gameContent[currentStage].answer) {
+        incrementScore();
         answerToDisplay.textContent = selectedAnswer + ": Correct";
-
         resultsContainer.append(answerToDisplay);
       } else {
         answerToDisplay.textContent = selectedAnswer + ": Incorrect";
