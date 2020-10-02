@@ -1,3 +1,4 @@
+var viewHighScore = document.getElementById("View-HS");
 var welcomeContainer = document.getElementById("welcome");
 var startButton = document.getElementById("start-quiz");
 var questionContainer = document.getElementById("question");
@@ -198,4 +199,9 @@ startButton.addEventListener("click", function () {
   var gameDisplay = gameContent[currentStage];
   renderGame(gameDisplay);
   startTime();
+});
+// this function allows you to go to the high score page when you click View Hi Scores in the nav bar
+viewHighScore.addEventListener("click", function () {
+  welcomeContainer.style.display = "none";
+  endGame();
 });
