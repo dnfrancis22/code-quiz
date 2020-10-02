@@ -11,13 +11,15 @@ var hsSubmit = document.getElementById("high-score-submit");
 var secondsLeft = 60;
 var timerInterval;
 var score = 0;
+// this hides the high score page until it is needed.
+hsContainer.style.display = "none";
 
-//start
+//this function starts the timer. It is called in the render game function.
 function startTime() {
   timerInterval = setInterval(count, 1000);
 }
 
-//count
+// this function counts down the timer holds the conditional to end the game if time runs out
 function count() {
   secondsLeft--;
   document.querySelector(".timer").textContent = secondsLeft;
@@ -29,7 +31,7 @@ function count() {
 }
 
 
-//reduce time
+//this function reduces time if the user chooses the wrong answer.
 function reduceTime() {
   secondsLeft -= 10;
 
@@ -46,21 +48,6 @@ function endGame() {
   h1.setAttribute("class", "question");
   h1.textContent = "High Score";
   hsHeader.append(h1);
-
-  var input = document.createElement("input");
-  input.type = "text";
-  input.setAttribute("class", "form-group");
-  hsInput.append(input);
-
-  var button = document.createElement("button");
-  button.setAttribute("class", "hsSubmit");
-  button.textContent = "Go Back";
-  hsSubmit.append(button);
-
-  var button = document.createElement("button");
-  button.setAttribute("class", "hsSubmit");
-  button.textContent = "Clear High Scores";
-  hsSubmit.append(button);
 }
 // this is the array of questions answer choices and correct answer.
 // I added a fith answer choice because I kept getting an empty button.

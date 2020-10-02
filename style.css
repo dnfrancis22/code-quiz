@@ -1,3 +1,4 @@
+/* theses styles are for the View high score button */
 #View-HS {
     color: rebeccapurple;
     border: none;
@@ -16,6 +17,7 @@
     color: thistle;
 
 }
+/* these styles are for the welcome page header paragraph and button. */
 h1 {
     margin-top: 2%;
     font-weight: bold    
@@ -25,13 +27,6 @@ p {
     margin-left: 25%;
     margin-right: 25%;
 }
-.question{
-    font-size: 35px;
-}
-.answer{
-    font-size: 10px;
-}
-
 #start-quiz {
     color: white;
     background-color: rebeccapurple;
@@ -42,7 +37,15 @@ p {
 #start-quiz:hover {
     background-color: thistle;
     border-color: thistle;
-}  
+} 
+
+/* these styles are for the question and answer section. */
+.question{
+    font-size: 35px;
+}
+.answer{
+    font-size: 10px;
+} 
 
 .answerChoices {
     color: white;
@@ -61,27 +64,6 @@ p {
     border-color: thistle;
 }
 .answerChoices:visited {
-    background-color: thistle;
-    border-color: thistle;
-}
-
-.hsSubmit {
-    color: white;
-    background-color: rebeccapurple;
-    border-color: rebeccapurple;
-    border-radius: 8px;
-    margin: 5px;
-
-}
-.hsSubmit:hover {
-    background-color: thistle;
-    border-color: thistle;
-}
-.hsSubmit:active {
-    background-color: thistle;
-    border-color: thistle;
-}
-.hsSubmit:visited {
     background-color: thistle;
     border-color: thistle;
 }

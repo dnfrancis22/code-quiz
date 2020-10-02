@@ -19,11 +19,13 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- the nav bar contains view high scores link and timer. -->
     <nav class="navbar navbar-light bg-light">
       <button id="View-HS">View High Scores</button>
       <div class="timer">60</div>
     </nav>
-    <div class="container" id="welcome">
+    <!-- this section contains the welcome page -->
+    <section class="container" id="welcome">
       <div class="row">
         <div class="col-sm-12 text-center">
           <h1>Coding Quiz Challenge</h1>
@@ -35,8 +37,9 @@
           <button id="start-quiz">Start Quiz</button>
         </div>
       </div>
-    </div>
-    <div class="container">
+    </section>
+    <!-- this section has holding spots for the dynamically generated elements for the question answer section. -->
+    <main class="container">
       <div class="row">
         <div class="col-sm-12" id="question"></div>
       </div>
@@ -46,18 +49,24 @@
       <div class="row">
         <div class="col-sm-4" id="results-display"></div>
       </div>
-    </div>
-    <div class="container" id="high-score-container">
+    </main>
+    <!-- This section contains elements for the high-score page -->
+    <section class="container" id="high-score-container">
       <div class="row">
-        <div class="col-sm-12" id="high-score"></div>
+        <div class="col-sm-6" id="high-score"></div>
       </div>
       <div class="row">
-        <div class="col-sm-12" id="high-score-input"></div>
+        <div class="col-sm-6" id="high-score-submit">
+          <form>
+            <div class="form-group">
+              <label >Enter you initials</label>
+              <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <button type="submit" class="answerChoices">Submit</button>
+          </form>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12" id="high-score-submit"></div>
-      </div>
-    </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
