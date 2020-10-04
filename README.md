@@ -34,8 +34,7 @@ When you click on the answers you are alerted if you are correct or not and the 
 ![answerQuestion-2](./assets/img-3.png)
 
 
-When you have answered all of the questions or the timer runs out, The high score page will load. On the high score page you can enter your initials, clear them out or click the Go back button to play again.
-
+When you have answered all of the questions or the timer runs out, The score page will load. You are presented with your score. You can enter your initials and click submit. this will take you back to the start of the game.
 
 ![highScore](./assets/img-4.png)
 
